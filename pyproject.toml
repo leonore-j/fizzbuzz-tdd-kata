@@ -40,6 +40,7 @@ select = ["E", "F", "I", "UP", "B"]
 # cell displays — that pattern is exactly what flake8-bugbear's B018
 # ("useless expression") flags, so it's disabled for notebook files.
 "notebooks/*.py" = ["B018"]
+"src/fizzbuzz_tdd_kata/core.py" = ["B018","F401"]
 
 [tool.mypy]
 strict = true
@@ -52,8 +53,7 @@ source = ["src"]
 show_missing = true
 fail_under = 90
 
-[tool.ruff.lint.per-file-ignores]
-"src/fizzbuzz_tdd_kata/core.py" = ["B018","F401"]
+
 
 
 
