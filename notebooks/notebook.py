@@ -69,7 +69,7 @@ def test_v1_returns_number_as_string():
 def _():
     mo.md(r"""
     ## Step 2 — Grow the contract: multiples of 3
-
+a
     We add a rule to the contract: *"if `n` is a multiple of 3,
     return `'Fizz'`"*. We first write the test (Red), then
     change the implementation to make it pass (Green), **without
