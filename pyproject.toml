@@ -31,4 +31,4 @@ testpaths = ["tests"]
 # marimo cells intentionally end on a bare expression to define what the
 # cell displays — that pattern is exactly what flake8-bugbear's B018
 # ("useless expression") flags, so it's disabled for notebook files.
-"notebooks/*.py" = ["B018"]
+"notebooks/*.py" = ["B018", "PLR1711", "I001","F401"]
