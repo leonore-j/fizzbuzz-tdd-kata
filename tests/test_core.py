@@ -1,13 +1,13 @@
 # tests/test_core.py
 import marimo
 import pytest
+
 from fizzbuzz_tdd_kata.core import fizzbuzz
 
 __generated_with = "0.24.2"
 app = marimo.App(width="medium")
 
 with app.setup:
-    import marimo as mo
     import pytest
 
 @app.function
@@ -35,4 +35,3 @@ def test_fizzbuzz_rejects_invalid_input():
         fizzbuzz(0)
     with pytest.raises(ValueError):
         fizzbuzz(-5)
-    return

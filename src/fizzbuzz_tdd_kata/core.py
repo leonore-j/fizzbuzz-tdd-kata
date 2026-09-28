@@ -12,7 +12,6 @@ app = marimo.App(width="medium")
 
 with app.setup:
     import marimo as mo
-    import pytest
 
 @app.function
 def fizzbuzz(n: int) -> str:
@@ -45,7 +44,6 @@ def _():
     single parametrized test — more readable and easier to extend
     than separate tests.
     """)
-    return
 
 def _():
     mo.md(r"""
@@ -54,7 +52,6 @@ def _():
     Use the field below to call `fizzbuzz` on an integer of your
     choice and see the result live — handy for a classroom demo.
     """)
-    return
 
 
 @app.cell
@@ -72,4 +69,3 @@ def _(n_input):
     except ValueError as e:
         output = mo.md(f"⚠️ Error: {e}")
     output
-    return
