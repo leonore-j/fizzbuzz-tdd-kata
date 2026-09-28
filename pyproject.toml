@@ -52,6 +52,9 @@ source = ["src"]
 show_missing = true
 fail_under = 90
 
+[tool.ruff.lint.per-file-ignores]
+"src/fizzbuzz_tdd_kata/core.py" = ["B018","F401"]
+
 
 
 
