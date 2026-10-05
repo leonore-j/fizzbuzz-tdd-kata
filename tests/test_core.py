@@ -1,5 +1,6 @@
 # tests/test_core.py
 import pytest
+
 from fizzbuzz_tdd_kata.core import fizzbuzz
 
 
