@@ -7,6 +7,7 @@ app = marimo.App(width="medium")
 
 with app.setup:
     import pytest
+
     from fizzbuzz_tdd_kata.core import fizzbuzz
 
 
