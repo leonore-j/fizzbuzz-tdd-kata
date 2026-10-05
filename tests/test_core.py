@@ -30,7 +30,7 @@ def test_cases(n, expected):
 
 
 @app.cell
-def test_fizzbuzz_rejects_invalid_input():
+def test_fizzbuzz_rejects_invalid_input(fizzbuzz):
     with pytest.raises(ValueError):
         fizzbuzz(0)
     with pytest.raises(ValueError):
