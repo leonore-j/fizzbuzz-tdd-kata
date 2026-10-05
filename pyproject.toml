@@ -16,6 +16,9 @@ fizzbuzz-tdd-kata = "fizzbuzz_tdd_kata:main"
 requires = ["uv_build>=0.12.17,<0.13.0"]
 build-backend = "uv_build"
 
+[tool.uv.build-backend]
+module-name = "fizzbuzz_tdd_kata"
+
 [dependency-groups]
 dev = [
     "marimo>=0.24.2",
